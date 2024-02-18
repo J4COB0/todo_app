@@ -3,7 +3,6 @@ from .models import Task
 
 
 class TaskAdmin(admin.ModelAdmin):
-    exclude = ("is_completed",)
     list_display = ("task", "is_completed", "created_at", "updated_at")
     search_fields = ("task",)
 
